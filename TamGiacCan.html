@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam Giac Can</title>
+</head>
+<body>
+<script>
+    var n = parseInt(prompt("nhap chieu cao tam giac"))
+    for (var i = 1; i <=n ; i ++){
+        for (var j = 1; j<= i;j++){
+            document.write("* ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>" + "<br>")
+
+    for (var i = n; i >=1 ; i --){
+        for (var j = 1; j<= i;j++){
+            document.write("* ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>" + "<br>")
+
+    for (var i = n; i >=1 ; i --) {
+        for (var j = 1; j <= n - i; j++) {
+            document.write("&nbsp;"+"&nbsp;");
+        }
+        for (var k = 1; k <= i; k++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>" + "<br>")
+
+    for (i = n; i >= 1; i--){
+        for (j = 1; j <= n; j++){
+            if(j < i){
+                document.write("&nbsp;"+"&nbsp;");
+            } else
+                document.write('*')
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+</script>
+</body>
+</html>

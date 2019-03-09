@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess Number</title>
+</head>
+<body>
+<script>
+    alert("Moi ban doan mot so ngau nhien tu 1-10");
+    var answer = Math.round(Math.random()*10);
+    var guess = parseInt(prompt("So ban doan la ?"));
+    console.log("Dap an: " + answer)
+
+    for (i=0;i<3; i++) {
+        if(answer == guess) {
+            alert("Ban da doan dung");
+            break;
+        }else if (guess > answer){
+            alert("So ban doan lon hon dap an")
+            guess = prompt("Moi ban doan lai")
+        }else if (answer == ""){
+            alert("Ban chua nhap dap an")
+            guess = prompt("Moi ban nhap lai")
+        }else {
+            alert("So ban doan nho hon dap an")
+            guess = prompt("Moi ban doan lai")
+        }
+    alert("Chuc ban may man lan sau")
+    }
+
+</script>
+</body>
+</html>

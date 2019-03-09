@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tong 20 So Fibonacci</title>
+</head>
+<body>
+<script>
+    var a,b,result,total;
+    a = 0;
+    b = 1;
+    result = b;
+    total = 0;
+    for (var i = 1; i<20; i++)
+    {
+        document.write(result+ "<br/>");
+        result = a +b;
+        a = b;
+        b =result;
+        total += result;
+    }
+    document.write("Tong 20 so fibonacci dau tien = " + total)
+</script>
+</body>
+</html>
